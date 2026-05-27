@@ -112,11 +112,13 @@ Pipelines are defined declaratively in **YAML presets**. Each preset lists the s
 
 | Code | Language |
 | ---- | -------- |
-| `en` | English  |
-| `fr` | French   |
+| `da` | Danish   |
 | `de` | German   |
-| `it` | Italian  |
+| `en` | English  |
 | `es` | Spanish  |
+| `fi` | Finnish  |
+| `fr` | French   |
+| `it` | Italian  |
 | `nl` | Dutch    |
 | `sv` | Swedish  |
 
