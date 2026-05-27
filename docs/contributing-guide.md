@@ -167,9 +167,11 @@ E2E tests validate the full pipeline (preset + language) against CSV fixtures. T
 tests/e2e/files/
   gladia-3/
     default.csv
+    da.csv
     de.csv
     en.csv
     es.csv
+    fi.csv
     fr.csv
     it.csv
     nl.csv
