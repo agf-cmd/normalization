@@ -44,8 +44,10 @@ DANISH_CONFIG = LanguageConfig(
     filler_words=[
         # Post-diacritics forms: remove_diacritics runs before remove_filler_words,
         # so ø→o and å→a conversions have already happened at match time.
+        # "ohm" (from "øhm") is intentionally excluded: after diacritics removal it
+        # collides with the SI unit "ohm", which would be silently deleted in phrases
+        # like "modstanden er 10 ohm".
         "oh",  # from "øh"
-        "ohm",  # from "øhm"
         "hm",
         "hmm",
         "mm",

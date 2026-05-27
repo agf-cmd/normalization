@@ -40,6 +40,7 @@ def normalizer_no_currency() -> DanishNumberNormalizer:
         ("fem og firs", "85"),
         # Glued og-compounds
         ("enogtyve", "21"),
+        ("etogtyve", "21"),  # neuter-"et" glued form
         ("toogtyve", "22"),
         ("fireogfirs", "84"),
         ("nioghalvfems", "99"),
@@ -55,6 +56,7 @@ def normalizer_no_currency() -> DanishNumberNormalizer:
         # Tusind
         ("tusind", "1000"),
         ("et tusind", "1000"),
+        ("en tusind", "1000"),  # common-gender form
         ("to tusind", "2000"),
         ("to tusind tre hundrede", "2300"),
         ("tres tusind", "60000"),
@@ -64,6 +66,7 @@ def normalizer_no_currency() -> DanishNumberNormalizer:
         ("en milliard", "1000000000"),
         ("to milliarder", "2000000000"),
         ("en billion", "1000000000000"),
+        ("to billioner", "2000000000000"),
         # Mixed digit + word
         ("3 milliard", "3000000000"),
         ("5 million", "5000000"),
