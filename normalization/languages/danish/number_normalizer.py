@@ -128,16 +128,6 @@ def _normalize_mixed_numbers(text: str) -> str:
 
 def _singular_spoken_unit(trailing_word: str) -> str:
     t = trailing_word.lower()
-    if t == "euros":
-        return "euro"
-    if t == "dollars":
-        return "dollar"
-    if t == "pund":
-        return "pund"  # invariant in Danish (same singular and plural)
-    if t == "cent":
-        return "cent"
-    if t == "yen":
-        return "yen"
     if t == "kroner":
         return "krone"
     return trailing_word
@@ -175,10 +165,7 @@ def _currency_plural_fix_patterns(
         singular = _singular_spoken_unit(trailing)
         if singular.lower() == tl:
             continue
-        if tl == "euros":
-            pat = re.compile(rf"\b{amount}\s+euro(?:'s)?\b", re.IGNORECASE)
-            out.append((pat, rf"\1 {trailing}"))
-        elif tl == "kroner":
+        if tl == "kroner":
             pat = re.compile(rf"\b{amount}\s+krone\b", re.IGNORECASE)
             out.append((pat, rf"\1 {trailing}"))
         else:

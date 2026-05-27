@@ -23,5 +23,5 @@ def test_config_code(operators: DanishOperators) -> None:
 
 
 def test_word_replacements(operators: DanishOperators) -> None:
-    assert operators.get_word_replacements()["euro"] == "euros"
     assert operators.get_word_replacements()["krone"] == "kroner"
+    assert "euro" not in operators.get_word_replacements()

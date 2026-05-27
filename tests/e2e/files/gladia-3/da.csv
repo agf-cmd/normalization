@@ -1,8 +1,8 @@
 input,expected
-ti euro,10 euros
+ti euro,10 euro
 2 < 5,2 mindre end 5
 50°C,50 grader celsius
-Det koster €50,det koster 50 euros
+Det koster €50,det koster 50 euro
 en og tyve kroner,21 kroner
 10 kr,10 kroner
 øh hej,hej

@@ -34,8 +34,8 @@ DANISH_CONFIG = LanguageConfig(
         "%": "procent",
     },
     currency_symbol_to_word={
-        "€": "euros",
-        "$": "dollars",
+        "€": "euro",
+        "$": "dollar",
         "£": "pund",
         "¢": "cent",
         "¥": "yen",

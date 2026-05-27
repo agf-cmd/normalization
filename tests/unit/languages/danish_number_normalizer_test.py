@@ -80,12 +80,12 @@ def test_danish_spelled_numbers(
 @pytest.mark.parametrize(
     ("text", "expected"),
     [
-        ("ti euro", "10 euros"),
+        ("ti euro", "10 euro"),
         ("hundrede kroner", "100 kroner"),
-        ("€10", "10 euros"),
+        ("€10", "10 euro"),
         ("10 kr", "10 kroner"),
         ("£50", "50 pund"),
-        ("fem dollar", "5 dollars"),
+        ("fem dollar", "5 dollar"),
     ],
 )
 def test_currency_symbols_and_plural_trailing_words(
