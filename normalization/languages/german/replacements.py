@@ -1,4 +1,9 @@
 GERMAN_REPLACEMENTS: dict[str, str] = {
+    # Colloquial / ASR variants (VoxPopuli DE)
+    "einmal": "mal",
+    "eines": "eins",
+    "konnt": "konnen",
+    "kottonou": "cotonou",
     "u.": "unter",
     "chr.": "christus",
     "rissströmungen": "riss-strömungen",
