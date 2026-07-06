@@ -1,4 +1,7 @@
 GERMAN_SENTENCE_REPLACEMENTS: dict[str, str] = {
+    # VoxPopuli DE: split compound / expanded policy term
+    "nun mehr": "nunmehr",
+    "handelspolitik und entwicklungspolitik": "handels und entwicklungspolitik",
     "regimeet kritischen": "regimekritischen",
     "cannabis joints": "cannabisjoints",
     "kampf handlungen": "kampfhandlungen",
