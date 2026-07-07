@@ -128,7 +128,7 @@ def test_kroner_word_not_treated_as_currency_suffix(
         # Glued og-compound ordinals (e.g. "enogtyvende" = 21st)
         ("enogtyvende", "21."),
         ("toogtyvende", "22."),
-        ("fireoghalvtredsende", "54."),
+        ("fireogfyrrende", "44."),
         # Cardinal + ordinal suffix (e.g. "hundrede tyvende" = 120th)
         ("hundrede tyvende", "120."),
         ("hundrede enogtyvende", "121."),
